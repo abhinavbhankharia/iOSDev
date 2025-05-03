@@ -14,3 +14,5 @@ let userAge = "55"
 let userAgeInSystem = Int(userAge)
 
 let StoredAge =  (Int(userAge) ?? 0) + 5
+
+//if userage is unable to convert to int then system takes 0 and performs the execution

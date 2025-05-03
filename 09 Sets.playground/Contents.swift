@@ -2,7 +2,7 @@ var challenge:Set = [
     "get the flag",
     "fold the flag",
     "takes stones",
-    "fold the flag",         //repeating a value, sets do not allow value repeatetion
+    "fold the flag",     //repeating a value, sets do not allow value repetition
     "get to the home",
 ]
 // all the values stored in the sets needs to be hashable

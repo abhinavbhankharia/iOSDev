@@ -1,7 +1,7 @@
 // Optionals
 
-var userCity:String?   //this is an optional and it may hold a String value or NIL
-var userActive:Bool?   //this is an optional and may hold boolean value or NIL
+var userCity:String?   //this is an optional, it may hold a String value or NIL
+var userActive:Bool?   //this is an optional, may hold boolean value or NIL
 
 userCity = "Delhi"
 
