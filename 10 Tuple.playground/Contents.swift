@@ -16,3 +16,14 @@ var course1: (courseName: String,  coursePrice: Int, courseStatus: Bool) = ("iOS
 //this is called as named tuple
 course1.0
 coursename
+
+
+//let movieInfoOne = ("Man of Steel", 2013)
+//let movieInfoTwo: (String, Int) = ("Man of Steel", 2013)
+
+// named tupled
+let movieInfoOne = (Name:"Man of Steel", year: 2013)
+let movieInfoTwo: (Name: String, Year: Int) = ("Man of Steel", 2013)
+
+
+print(movieInfoOne.Name)
