@@ -64,7 +64,7 @@ struct Movie{
 
 var info1 = Movie(name: "Ironman")
 
-var info2 = info    //they pass value and not reference hence changing value of info2 wont change the value for info1
+var info2 = info1    //they pass value and not reference hence changing value of info2 wont change the value for info1
 info2.name = "avengers"
 
 print(info1.name)
