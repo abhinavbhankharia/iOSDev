@@ -37,7 +37,7 @@ print("Area of rectangle is : \(area.area)")
 struct Modify {
     var num = 45
     
-    mutating func areaOfSquare() -> Int{
+    mutating func areaOfSquare() -> Int{        //mutating allows immutable values to be changed
         num *= num
         return num
     }
@@ -65,11 +65,12 @@ hero.Types()
 print(hero)
 
 
+//swift nested class properties
 class AreaSquare {
     class func areaSq(num: Int) -> Int{
         return num * num
     }
 }
 
-
+//accessing class inside of another class
 let sqArea = AreaSquare.areaSq(num: 30)

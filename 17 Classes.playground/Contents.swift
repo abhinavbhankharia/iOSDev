@@ -5,7 +5,7 @@ class DC {
     var aired: Int
     var network: String
     
-    init(Series: String, AiredIn: Int, Network: String){
+    init(Series: String, AiredIn: Int, Network: String){    //initializing variables
         self.series = Series
         self.aired = AiredIn
         self.network = Network
@@ -29,9 +29,9 @@ class Details {
 
 
 var minfo = Details(name: "Superman")
-var minfoTwo = minfo
+var minfoTwo = minfo        //here reference is passed and not values
 
-minfoTwo.name = "Batman"
+minfoTwo.name = "Batman"    //hence, changing the value of minfoTwo actually changes the value of minfo as minfoTwo contains reference of minfo
 
 print(minfo.name)
 print(minfoTwo.name)
