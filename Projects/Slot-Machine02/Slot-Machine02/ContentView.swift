@@ -40,9 +40,9 @@ enum Choice: Int, Identifiable {
 struct ContentView: View {
     
     //@state is used for values that might change for which SwiftUI maight re-render the elements
-    @State public var symbols = ["eating", "happy", "love"]
+    @State public var symbols = ["eating", "happy", "love", "scary", "sleeping"]
     
-    @State public var numbers = [0, 1, 2]
+    @State public var numbers = [0, 1, 2, 3, 4]
     
     @State public var counter = 0
     
@@ -108,7 +108,7 @@ struct ContentView: View {
                             .fill(Color.white.opacity(0.8))
                             .frame(width: 100, height: 120, alignment: .center)
                             .overlay(
-                                Image(symbols[numbers[0]])
+                                Image(symbols[numbers[3]])
                                     .resizable()
                                     .scaledToFit()
                                     .frame(width: 80, height: 70, alignment: .center)
@@ -118,7 +118,7 @@ struct ContentView: View {
                             .fill(Color.white.opacity(0.8))
                             .frame(width: 100, height: 120, alignment: .center)
                             .overlay(
-                                Image(symbols[numbers[1]])
+                                Image(symbols[numbers[4]])
                                     .resizable()
                                     .scaledToFit()
                                     .frame(width: 80, height: 70, alignment: .center)
@@ -130,10 +130,12 @@ struct ContentView: View {
                     self.numbers[0] = Int.random(in: 0...self.symbols.count - 1)
                     self.numbers[1] = Int.random(in: 0...self.symbols.count - 1)
                     self.numbers[2] = Int.random(in: 0...self.symbols.count - 1)
+                    self.numbers[3] = Int.random(in: 0...self.symbols.count - 1)
+                    self.numbers[4] = Int.random(in: 0...self.symbols.count - 1)
                     
                     counter += 1
                     
-                    if self.numbers[0] == self.numbers[1] && self.numbers[1] == self.numbers[2] {
+                    if self.numbers[0] == self.numbers[1] && self.numbers[1] == self.numbers[2] && self.numbers[2] == self.numbers[3] && self.numbers[3] == self.numbers[4] {
                         self.showingAlert = .success
                         counter = 0
                     }
