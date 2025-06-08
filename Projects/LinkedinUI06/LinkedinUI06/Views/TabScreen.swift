@@ -9,7 +9,33 @@ import SwiftUI
 
 struct TabScreen: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabView{
+            HomeScreen()
+                .tabItem{
+                    Image(systemName: "house.fill")
+                    Text("Home")
+                }
+            MyNetworkScreen()
+                .tabItem{
+                    Image(systemName: "person.2.fill")
+                    Text("My Network")
+                }
+            Text("Post")
+                .tabItem{
+                    Image(systemName: "plus.app.fill")
+                    Text("Post")
+                }
+            Text("Notifications")
+                .tabItem{
+                    Image(systemName: "bell.badge.fill")
+                    Text("Notifications")
+                }
+            Text("Jobs")
+                .tabItem{
+                    Image(systemName: "briefcase.fill")
+                    Text("Notifications")
+                }
+        }
     }
 }
 
