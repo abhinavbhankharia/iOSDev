@@ -41,7 +41,7 @@ struct OnBoardingScreenView: View {
                 }
                 Spacer()
             }
-            
+            .navigationTitle("")
             .navigationBarHidden(true)
         }
         

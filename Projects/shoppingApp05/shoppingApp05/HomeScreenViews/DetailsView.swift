@@ -59,7 +59,8 @@ struct DetailsView: View {
                 .resizable()
                 .edgesIgnoringSafeArea(.top)
                 .clipShape(RoundedCornerShape.init(corners: [.bottomLeft, .bottomRight], radius: 50))
-                .frame(width: .infinity, height: .infinity, alignment: .top)
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+                .edgesIgnoringSafeArea(.all)
                 .shadow(color: .gray, radius: 5, x: 5, y: 5)
                 .overlay(
                     Image("\(fruit.rawValue)")
