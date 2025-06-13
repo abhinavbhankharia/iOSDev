@@ -24,7 +24,7 @@ struct PokemonGridView: View {
                             NavigationLink {
                                 PokemonDetailView(viewModel: viewModel, pokemon: pokemon)
                             } label: {
-                                PokeCell(pokemon: pokemon, viewmodel: viewModel)
+                                PokeCell(pokemon: pokemon, viewModel: viewModel)
                             }
 
                         }
